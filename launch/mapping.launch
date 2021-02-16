@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="rosserial_arduino" type="serial_node.py" name="motor_arduino" output="screen">
+    <param name="port" type="string" value="/dev/ttyUSB0" />
+  </node>
+  <node pkg="lidar_project" type="lidar_scan" name="lidar_scan" output="screen">
+    <param name="serial_port_name" type="string" value="/dev/ttyUSB1"/>
+    <param name="frame_id" type="string" value="pcl_data"/>
+    <param name="pub_topicname_lidar" type="string" value="/pcl_data"/>
+    <param name="min_r" type="int" value="$(arg min_r)"/>
+    <param name="max_r" type="int" value="$(arg max_r)"/>
+    <param name="height" type="double" value="$(arg height)"/>
+  </node>
+
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find lidar_project)/rviz/mapping_config.rviz"  />
+
+  <node pkg="rosbag" type="record" name="record" output="screen" args="-O /home/hkm/$(arg bag_filename) /pcl_total /lidar_range" />
+</launch>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>2dto3d</name>
+  <version>0.0.0</version>
+  <description>3D point clouding using 2D lidar with ROS</description>
+
+  <maintainer email="kkalkkalssamssam@gmail.com">JuneChang Lee</maintainer>
+  <maintainer email="tjdtlrwwkd@gmail.com">SeongSik Kim</maintainer>
+  <maintainer email="ghduddlrjdi@naver.com">HoYoung Hwang</maintainer>
+
+  <maintainer email="project@soslab.co">SOSLAB Co., Ltd.</maintainer>
+
+  <url type="website">http://soslab.co</url>
+
+  <license>BSD</license>
+
+  <author email="kkalkkalssamssam@gmail.com">JuneChang Lee</author>
+  <author email="tjdtlrwwkd@gmail.com">SeongSik Kim</author>
+  <author email="ghduddlrjdi@naver.com">HoYoung Hwang</author>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>pcl_ros</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_export_depend>pcl_ros</build_export_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>sensor_msgs</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <exec_depend>pcl_ros</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+</package>
