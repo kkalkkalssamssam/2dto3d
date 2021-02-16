@@ -1,3 +1,3 @@
 # 2dto3d
 
-Hello World
+3D point clouding using 2D lidar with ROS
