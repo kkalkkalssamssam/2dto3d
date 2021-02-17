@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>2dto3d</name>
+  <name>project_2dto3d</name>
   <version>0.0.0</version>
   <description>3D point clouding using 2D lidar with ROS</description>
 
