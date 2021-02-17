@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(2dto3d)
+project(project_2dto3d)
 
 EXECUTE_PROCESS( COMMAND uname -m COMMAND tr -d '\n' OUTPUT_VARIABLE ARCHITECTURE )
 message( STATUS "Architecture: ${ARCHITECTURE}" )
