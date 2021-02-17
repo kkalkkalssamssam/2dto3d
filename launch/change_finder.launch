@@ -14,7 +14,7 @@
     <param name="height" type="double" value="$(arg height)"/>
   </node>
 
-  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find lidar_project)/rviz/change_config.rviz"  />
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find project_2dto3d)/rviz/change_config.rviz"  />
 
   <node pkg="rosbag" type="play" name="play" output="screen" args="/home/hkm/$(arg bag_filename).bag --wait-for-subscribers" />
 
