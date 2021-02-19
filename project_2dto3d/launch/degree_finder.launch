@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <launch>
-  <node pkg="lidar_project" type="degree_finder" name="degree_finder" output="screen">
+  <node pkg="project_2dto3d" type="degree_finder" name="degree_finder" output="screen">
     <param name="serial_port_name" type="string" value="/dev/ttyUSB1"/>
     <param name="pub_topicname" type="string" value="/pcl_rviz"/>
     <param name="sub_topicname" type="string" value="/pcl_total"/>
@@ -8,6 +8,6 @@
 
   <node pkg="rviz" type="rviz" name="rviz" args="-d $(find project_2dto3d)/rviz/degree_config.rviz"  />
 
-  <node pkg="rosbag" type="play" name="play" output="screen" args="/home/hkm/$(arg bag_filename).bag --wait-for-subscribers" />
+  <node pkg="rosbag" type="play" name="play" output="screen" args="/home/aa/$(arg bag_filename).bag --wait-for-subscribers" />
 
 </launch>
