@@ -45,3 +45,4 @@ $ roslaunch project_2dto3d degree_finder.launch bag_filename:=()
 $ roslaunch project_2dto3d cluster.launch bag_filename:=()
 ```
 #### bag_filename must be same.
+#### 197 <= min_r < max_r <= 827
